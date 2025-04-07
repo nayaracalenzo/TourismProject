@@ -10,9 +10,9 @@ const AboutUs = () => {
       <Image
         src={buggy}
         alt="..."
-        className="animate__animated animate__fadeInLeft animate__slower animate__delay-5s w-90 mb-30 rounded-3xl "
+        className="animate__animated animate__fadeInLeft animate__slower w-90 mb-30 rounded-3xl "
       />
-      <div className="animate__animated animate__fadeInRight animate__slower animate__delay-5s w-[50%] ">
+      <div className="animate__animated animate__fadeInRight animate__slower  w-[50%] ">
         <h1
           className={`${bebasneue.className} text-6xl font-bold my-7 text-center text-[#0082ca]`}
         >
