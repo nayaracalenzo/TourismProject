@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
 import { FaChevronLeft, FaChevronRight, FaWhatsapp } from 'react-icons/fa';
-import { bebasneue } from '../layout';
+import { bebasneue } from '../fonts';
 
 interface ImageCarouselProps {
   images: string[];

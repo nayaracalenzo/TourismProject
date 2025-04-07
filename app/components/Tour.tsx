@@ -63,12 +63,10 @@ const Tour = () => {
             />
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center hover:backdrop-brightness-50 overflow-hidden">
               <div className="">
-                <h2 className="animate__animated animate__fadeInUp animate__slower absolute bottom-0 right-0 w-full h-full py-[50%] text-center hover:text-amber-400 text-2xl font-medium transition delay-50 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110">
+                <h2 className="animate__animated animate__fadeInUp animate__slower animate__delay-5s absolute bottom-0 right-0 w-full h-full py-[50%] text-center hover:text-amber-400 text-2xl font-medium transition delay-50 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 text-white">
                   {item.local}
                 </h2>
-                <span
-                  className=" animate__animated animate__fadeInUp animate__slower mt-20 cursor-pointer flex gap-2 bg-gray-400/40 text-white font-medium rounded-2xl p-2 px-6 items-center justify-center w-fit my-10"
-                >
+                <span className=" animate__animated animate__fadeInUp animate__slower animate__delay-5s mt-20 cursor-pointer flex gap-2 bg-gray-400/40 text-white font-medium rounded-2xl p-2 px-6 items-center justify-center w-fit my-10">
                   <FaWhatsapp className="" />
                   RESERVE JÁ
                 </span>

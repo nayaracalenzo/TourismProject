@@ -2,17 +2,17 @@ import React from 'react';
 import 'animate.css';
 import Image from 'next/image';
 import buggy from '../../public/buggy.jpeg'
-import { bebasneue } from '../layout';
+import { bebasneue } from '../fonts';
 
 const AboutUs = () => {
   return (
-      <section className="flex bg-blue-50 px-60 text-gray-500 justify-between pt-30 flex-wrap-reverse ">
-        <Image
-          src={buggy}
-          alt="..."
-          className="animate__animated animate__fadeInRight animate__slower w-90 mb-30 rounded-3xl"
-        />
-      <div className="animate__animated animate__fadeInLeft animate__slower w-[50%]">
+    <section className="flex bg-blue-50 px-60 text-gray-500 justify-between pt-30 flex-wrap-reverse overflow-hidden">
+      <Image
+        src={buggy}
+        alt="..."
+        className="animate__animated animate__fadeInLeft animate__slower animate__delay-5s w-90 mb-30 rounded-3xl "
+      />
+      <div className="animate__animated animate__fadeInRight animate__slower animate__delay-5s w-[50%] ">
         <h1
           className={`${bebasneue.className} text-6xl font-bold my-7 text-center text-[#0082ca]`}
         >
