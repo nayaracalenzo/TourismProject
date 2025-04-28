@@ -6,7 +6,7 @@ import { poppins } from '../fonts';
 
 const AboutUs = () => {
   return (
-    <section className="flex flex-col lg:flex-row bg-blue-50 md:px-60 lg:px-20 text-gray-500 lg:gap-20 justify-center overflow-hidden lg:items-center pb-10">
+    <section className="flex flex-col lg:flex-row bg-blue-50 md:px-60 lg:px-20 text-gray-500 lg:gap-20 justify-center overflow-hidden lg:items-center pb-20">
       <Image
         src={buggy}
         alt="..."
@@ -14,7 +14,7 @@ const AboutUs = () => {
       />
       <div className="animate__animated animate__fadeInRight animate__slower w-full lg:w-[40%] px-5">
         <h1
-          className={`${poppins.className} text-[24px] mb-5 mt-10  font-semibold text-justify text-[#0082ca]`}
+          className={`${poppins.className} text-[24px] mb-5 mt-20  font-semibold text-justify text-[#0082ca]`}
         >
           Explore o mundo com a LisTur
         </h1>

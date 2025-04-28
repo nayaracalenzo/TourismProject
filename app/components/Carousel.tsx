@@ -43,7 +43,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
             key={index}
             className="p-3  flex flex-col-reverse lg:flex-row items-center justify-center min-w-full bg-gray-200 relative overflow-hidden "
           >
-            <div className="text-black z-1 w-full text-center py-5">
+            <div className="text-black z-1 w-full text-center py-25">
               <h2
                 className={`${bebasneue.className} text-amber-500 font-bold mb-3`}
               >

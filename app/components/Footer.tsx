@@ -7,7 +7,7 @@ import cadastur from '../assets/cadastur.png';
 
 const Footer = () => {
   return (
-    <footer className="px-3 bg-gray-900 text-white py-6">
+    <footer className="px-3 bg-gray-900 text-white py-25">
       <div className="flex flex-col items-center justify-center gap-20">
         <div className="flex flex-col gap-5 justify-center items-center">
           <Image src={logo} alt="logo" className="w-30" />

@@ -45,7 +45,7 @@ const Tour = () => {
     //selecionar o id do scroll, 
   return (
     <div className="bg-blue-50">
-      <h1 className="text-center bg-blue-50 text-blue-950 font-bold text-2xl py-5">
+      <h1 className="text-center bg-blue-50 text-blue-950 font-bold text-2xl py-20">
         Reserve sua próxima viagem
       </h1>
       <div className="grid grid-cols-2  lg:grid-cols-3">
