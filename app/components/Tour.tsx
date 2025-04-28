@@ -1,6 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import imgfuturo from '../../public/imgpraiafuturo2.jpg';
+import imgcanoa from '../../public/imgcanoa.jpg';
+import imgcumbuco from '../../public/imgcumbuco.jpg';
+import imgparacuru from '../../public/imgparacuru.jpg';
+import imglagoinha from '../../public/imglagoinha.jpg';
+import imgmundau from '../../public/imgmundau.jpg';
+import imgflecheiras from '../../public/imgflecheiras.jpg';
+import imgjeri from '../../public/imgjeri.jpg';
 import imgbeachpark from '../../public/imgbeachpark.jpg';
 import imgpraiadasfontes from '../../public/imgpraiadasfontes.jpg';
 import imgaguasbelas from '../../public/imgaguasbelas.jpg';
@@ -17,9 +23,9 @@ const Tour = () => {
       desc: 'Beach Park',
     },
     {
-      local: 'Praia do Futuro',
-      img: imgfuturo,
-      desc: 'Praia do Futuro',
+      local: 'Canoa Quebrada',
+      img: imgcanoa,
+      desc: 'Canoa Quebrada',
     },
     {
       local: 'Praia das Fontes',
@@ -41,6 +47,36 @@ const Tour = () => {
       img: imgmorrobranco,
       desc: 'Morro Branco',
     },
+    {
+      local: 'Cumbuco',
+      img: imgcumbuco,
+      desc: 'Cumbuco',
+    },
+    {
+      local: 'Paracuru',
+      img: imgparacuru,
+      desc: 'Paracuru',
+    },
+    {
+      local: 'Lagoinha',
+      img: imglagoinha,
+      desc: 'Lagoinha',
+    },
+    {
+      local: 'Mundaú',
+      img: imgmundau,
+      desc: 'Mundaú',
+    },
+    {
+      local: 'Flecheiras',
+      img: imgflecheiras,
+      desc: 'Flecheiras',
+    },
+    {
+      local: 'Jericoacoara',
+      img: imgjeri,
+      desc: 'Jericoacoara',
+    },
   ];
     //selecionar o id do scroll, 
   return (
@@ -51,7 +87,7 @@ const Tour = () => {
       <div className="grid grid-cols-2 lg:grid-cols-3">
         {touritens.map((item, index) => (
           <a
-            href="https://wa.me/5585981781918?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20passeio"
+            href="https://wa.me/5585981781918?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20orçamento"
             key={index}
             className="relative group"
           >

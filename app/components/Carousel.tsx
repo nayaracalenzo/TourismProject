@@ -71,7 +71,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                   `Fortaleza é uma mistura de história, cultura e belezas naturais! Em nosso city tour, você vai visitar os pontos turísticos mais famosos. Acompanhe um guia especializado e descubra os segredos dessa cidade vibrante, que combina tradição e modernidade`}
               </p>
               <a
-                href="https://wa.me/5585981781918?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20passeio"
+                href="https://wa.me/5585981781918?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20orçamento"
                 className="mx-auto px-6 py-1 gap-1 font-bold cursor-pointer text-gray-100 hover:bg-green-600 flex bg-green-500 rounded-lg  items-center justify-center w-fit lg:mx-0 lg:mt-5"
               >
                 <FaWhatsapp  />

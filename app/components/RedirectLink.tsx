@@ -4,7 +4,7 @@ import 'animate.css';
 const RedirectLink = ({icon='true'}) => {
   return (
     <a
-      href="https://wa.me/5585981781918?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20passeio"
+      href="https://wa.me/5585981781918?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20orçamento"
       rel="noopener noreferrer"
       className={`fixed bottom-4 right-4 text-white p-3 ${
         icon
