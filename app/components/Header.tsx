@@ -54,7 +54,7 @@ const Header = ({ bgImage }: HeaderProps) => {
           </nav>
         </div>
       </div>
-      <h1 className="relative z-10 text-white font-bold text-center text-3xl py-[120px] mt-10">
+      <h1 className="relative z-10 text-white font-bold text-center text-3xl py-[140px] mt-10">
         Seu Próximo <span className="text-yellow-300">Destino dos Sonhos</span>,
         Começa Aqui.
       </h1>
