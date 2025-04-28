@@ -7,7 +7,7 @@ import cadastur from '../assets/cadastur.png';
 
 const Footer = () => {
   return (
-    <footer className="px-3 bg-gray-900 text-white py-25 lg:py-10" id='contato'>
+    <footer className="px-3 bg-gray-900 text-white py-25 lg:py-10">
       <div className="flex flex-col items-center justify-center gap-20 lg:gap-100 lg:flex-row">
         <div className="flex lg:flex-row lg:w-[40%] flex-col gap-5 justify-center items-center">
           <Image src={logo} alt="logo" className="w-30" />
@@ -30,16 +30,19 @@ const Footer = () => {
         </div>
       </div>
       <nav className="w-[100%] gap-3 py-10 ">
-        <h2 className="font-bold text-center">Redes sociais</h2>
+        <h2 className="font-bold text-center">Conecte-se</h2>
         <ul className="flex items-center justify-center gap-2 pb-2">
           <li className="cursor-pointer">
             <a href="https://www.instagram.com/listurpasseiosturisticos/">
-              <FaInstagram className="w-7 h-7 hover:text-blue-700 mx-auto" />
+              <FaInstagram className="w-7 h-7 mx-auto" />
             </a>
           </li>
           <li className="cursor-pointer p-2">
-            <a className="grid gap-2 justify-center" href="mailto:listur001@gmail.com">
-              <FaEnvelope className="w-7 h-7 mx-auto" />
+            <a
+              className="grid gap-2 justify-center"
+              href="mailto:listur001@gmail.com"
+            >
+              <FaEnvelope className=" w-7 h-7 mx-auto" />
             </a>
           </li>
         </ul>

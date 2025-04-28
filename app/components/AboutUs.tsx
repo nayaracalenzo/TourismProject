@@ -1,7 +1,7 @@
 import React from 'react';
 import 'animate.css';
 import Image from 'next/image';
-import buggy from '../../public/buggy.jpeg'
+import buggy from '../../public/buggy.jpeg';
 import { poppins } from '../fonts';
 
 const AboutUs = () => {
@@ -21,7 +21,7 @@ const AboutUs = () => {
         >
           Explore o mundo com a LisTur
         </h1>
-        <p className="text-justify pb-3 text-base/7">
+        <p className="text-justify pb-3">
           Bem-vindo à nossa agência de turismo, onde a beleza das praias de
           Fortaleza e região ganha vida! Somos uma equipe apaixonada por
           compartilhar o que há de melhor no litoral cearense, oferecendo
@@ -38,11 +38,11 @@ const AboutUs = () => {
             roteiros sob medida, serviços de qualidade e suporte constante
           </strong>
           .
+        </p>
           <p className="italic text-[#0082ca] pt-5 text-start">
             É o cenário ideal para quem busca diversão, relaxamento e novas
             descobertas.
           </p>
-        </p>
       </div>
     </section>
   );

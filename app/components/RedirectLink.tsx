@@ -1,4 +1,5 @@
 import { FaWhatsapp } from 'react-icons/fa';
+import 'animate.css';
 
 const RedirectLink = ({icon='true'}) => {
   return (
@@ -7,7 +8,7 @@ const RedirectLink = ({icon='true'}) => {
       rel="noopener noreferrer"
       className={`fixed bottom-4 right-4 text-white p-3 ${
         icon
-          ? 'shadow-lg rounded-full bg-green-500 hover:bg-green-600 transition-all'
+          ? 'shadow-lg rounded-full animate__animated animate__pulse animate__infinite infinite bg-green-500 hover:bg-green-600 transition-all'
           : 'bg-white opacity-80'
       }`}
     >

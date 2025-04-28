@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import imgfuturo from '../assets/imgpraiafuturo.jpg';
+import imgfuturo from '../../public/imgpraiafuturo2.jpg';
 import imgbeachpark from '../../public/imgbeachpark.jpg';
 import imgpraiadasfontes from '../../public/imgpraiadasfontes.jpg';
 import imgaguasbelas from '../../public/imgaguasbelas.jpg';
@@ -44,7 +44,7 @@ const Tour = () => {
   ];
     //selecionar o id do scroll, 
   return (
-    <div className="bg-blue-50" id='passeios'>
+    <div className="bg-blue-50" id="passeios">
       <h1 className="text-center bg-blue-50 text-blue-950 font-bold text-2xl py-10 pt-10">
         Reserve sua próxima viagem
       </h1>
@@ -53,14 +53,13 @@ const Tour = () => {
           <a
             href="https://wa.me/5585981781918?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20passeio"
             key={index}
-            className="relative group "
+            className="relative group"
           >
             <Image
-              objectFit="fill"
-              className="h-[200px] md:h-[300px] lg:h-[400px] opacity-100"
+              className="object-cover h-[200px] md:h-[300px] lg:h-[400px] opacity-100"
               src={item.img}
               alt={item.desc}
-              layout="auto"
+              priority
             />
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center hover:backdrop-brightness-50 overflow-hidden">
               <div className="">
