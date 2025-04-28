@@ -17,6 +17,7 @@ const Header = ({ bgImage }: HeaderProps) => {
         <Image
           src={bgImage}
           alt="Background Header"
+          className='object-cover h-full'
           priority
         />
         <div className="absolute inset-0 bg-black/50"></div>{' '}
