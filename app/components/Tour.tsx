@@ -51,7 +51,7 @@ const Tour = () => {
       <div className="grid grid-cols-2 lg:grid-cols-3">
         {touritens.map((item, index) => (
           <a
-            href="https://wa.me/5585981781918&text=Ol%C3%A1!%20Gostaria%20de%20Agendar%20um%20Passeio!"
+            href="https://wa.me/5585981781918?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20passeio"
             key={index}
             className="relative group "
           >

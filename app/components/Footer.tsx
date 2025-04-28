@@ -38,7 +38,7 @@ const Footer = () => {
             </a>
           </li>
           <li className="cursor-pointer p-2">
-            <a className="grid gap-2 justify-center" href="listur001@gmail.com">
+            <a className="grid gap-2 justify-center" href="mailto:listur001@gmail.com">
               <FaEnvelope className="w-7 h-7 mx-auto" />
             </a>
           </li>
