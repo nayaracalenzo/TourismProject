@@ -1,17 +1,19 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import logo from '../../public/logosombra.png';
 import 'animate.css';
+import { FaBars, FaXmark } from 'react-icons/fa6';
 
 interface HeaderProps {
   bgImage: StaticImageData;
-  title: string;
 }
 
-const Header = ({bgImage, title}: HeaderProps) => {
+const Header = ({ bgImage }: HeaderProps) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="relative w-full py-10 pb-50 text-white">
-      <div className="absolute inset-0 z-[-1]">
+    <header className="relative w-full pb-50 text-white">
+      <div className="absolute inset-0 fixed z-[-1]">
         <Image
           src={bgImage}
           alt="Background Header"
@@ -20,32 +22,44 @@ const Header = ({bgImage, title}: HeaderProps) => {
           priority
         />
         <div className="absolute inset-0 bg-black/50"></div>{' '}
-        {/* camada de escurecimento */}
       </div>
-      <div className="relative z-10 flex justify-between items-center px-40">
-        <Image className="w-40 contrast-200" src={logo} alt="logo" />
-        <nav className="h-10">
-          <ul className="text-white flex gap-10 justify-end font-medium ">
-            <li className="duration-100 border-b-3 border-b-amber-300">
-              INÍCIO
-            </li>
-            <li className="duration-100 hover:border-b-3 border-b-amber-300">
-              SOBRE NÓS
-            </li>
-            <li className="duration-100 hover:border-b-3 border-b-amber-300">
-              PASSEIOS
-            </li>
-            <li className="duration-100 hover:border-b-3 border-b-amber-300">
-              CONTATO
-            </li>
-          </ul>
-        </nav>
+      <div className="relative z-10 flex justify-between items-center">
+        <Image className="h-40 w-auto contrast-200" src={logo} alt="logo" />
+        <div className="relative">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`lg:hidden text-white focus:outline-none absolute -top-5 right-0 px-10`}
+          >
+            {isOpen ? <FaXmark /> : <FaBars />}
+          </button>
+          <nav className="">
+            <ul
+              className={`${
+                isOpen ? 'block' : 'hidden'
+              } absolute -top-15 right-20 text-center lg:text-white lg:bg-transparent text-white lg:flex gap-10 justify-end font-medium h-full w-30`}
+            >
+              <li className="duration-100 border-b-3 border-b-amber-300">
+                INÍCIO
+              </li>
+              <li className="cursor-pointer duration-100 hover:border-b-3 border-b-amber-300">
+                SOBRE NÓS
+              </li>
+              <li className="cursor-pointer duration-100 hover:border-b-3 border-b-amber-300">
+                PASSEIOS
+              </li>
+              <li className="cursor-pointer duration-100 hover:border-b-3 border-b-amber-300">
+                CONTATO
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <h1 className="relative z-10 text-white font-medium text-center text-3xl py-[200px]">
-        {title}
+      <h1 className="relative z-10 text-white font-bold text-center text-3xl py-[90px] mt-10">
+        Seu Próximo <span className="text-yellow-300">Destino dos Sonhos</span>,
+        Começa Aqui.
       </h1>
     </header>
   );
-}
+};
 
-export default Header
+export default Header;

@@ -1,60 +1,53 @@
-import React from 'react'
-import Image from 'next/image'
-import { FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
-// import { bebasneue } from '../layout';
+import React from 'react';
+import Image from 'next/image';
+import { FaInstagram, FaEnvelope } from 'react-icons/fa';
 import RedirectLink from '../components/RedirectLink';
-import logo from '../../public/listurlogo1.png'
+import logo from '../../public/listurlogo1.png';
+import cadastur from '../assets/cadastur.png';
 
-const Footer = () => {   
+const Footer = () => {
   return (
-    <footer className="pr-10 bg-gray-900 text-white py-5">
-      <div className="flex items-center  pb-5 justify-evenly p-20 ">
-        <div className="w-[35%] flex items-center">
+    <footer className="px-3 bg-gray-900 text-white py-6">
+      <div className="flex flex-col items-center justify-center gap-20">
+        <div className="flex flex-col gap-5 justify-center items-center">
           <Image src={logo} alt="logo" className="w-30" />
-          <p className="text-justify">
-            Serviço de táxi e turismo em Fortaleza-Ce, Transfer, Viagens,
-            Passeios, Aeroportos, Agendamentos.
+          <p className="text-center">
+            Serviço de táxi e turismo em Fortaleza-Ce.
+            Transfer, Viagens, Passeios, Aeroportos, Agendamentos.
           </p>
+          <p>(85) 98178-1918</p>
         </div>
-        <nav className='grid gap-3'>
-          <ul className='flex items-center gap-2 pb-2'>
-            <li>
-              <a href="https://www.instagram.com/juninhopraianoturismo/">
-                <FaInstagram className="w-7 h-7 hover:text-blue-700" />
-              </a>
-            </li>
-            <li className="cursor-pointer
-              flex
-              gap-2
-              rounded-2xl
-              p-2
-              items-center
-              justify-center"
-            >
-                <a className='flex gap-2' href="">
-                <FaEnvelope className="w-7 h-7" />
-                <span>listur001@gmail.com</span>
-              </a>
-            </li>
-            </ul>
-            <ul>
-            <li className="cursor-pointer hover:bg-green-600 flex gap-2 bg-green-500 rounded-2xl p-2 px-4 items-center justify-center">
-              <a className="flex items-center gap-2" href="https://wa.me/5585996823822">
-                <FaWhatsapp className="" />
-              Reserve Já
-              </a>
-              
-            </li>
-          </ul>
-        </nav>
+        <div className="block text-center">
+          <p className="text-sm">EMPRESA CADASTRADA</p>
+          <Image
+            src={cadastur}
+            alt="empresa credenciada cadastur"
+            className="w-50 p-3"
+          />
+        </div>
       </div>
-      <p className="text-center pt-5 w-[60%] mx-auto">
+      <nav className="w-[100%] gap-3 py-10 ">
+        <h2 className="font-bold text-center">Redes sociais</h2>
+        <ul className="flex items-center justify-center gap-2 pb-2">
+          <li className="cursor-pointer">
+            <a href="https://www.instagram.com/listurpasseiosturisticos/">
+              <FaInstagram className="w-7 h-7 hover:text-blue-700 mx-auto" />
+            </a>
+          </li>
+          <li className="cursor-pointer p-2">
+            <a className="grid gap-2 justify-center" href="listur001@gmail.com">
+              <FaEnvelope className="w-7 h-7 mx-auto" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p className="text-center w-[95%] mx-auto">
         &copy; {new Date().getFullYear()} – Lis Tur. Todos os direitos
         reservados.
       </p>
       <RedirectLink />
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

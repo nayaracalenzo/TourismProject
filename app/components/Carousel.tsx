@@ -33,7 +33,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
   }, [currentIndex, goToNext]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-auto overflow-hidden">
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -41,30 +41,28 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
         {images.map((src, index) => (
           <div
             key={index}
-            className="py-7 px-46 bg-white flex justify-between min-w-full h-screen"
+            className="p-3  flex flex-col-reverse lg:flex-row items-center justify-center min-w-full bg-gray-200 relative overflow-hidden "
           >
-            <div className="text-black py-32 w-1/2">
+            <div className="text-black z-1 w-full text-center py-5">
               <h2
-                className={`${bebasneue.className} text-amber-400 font-bold mb-3`}
+                className={`${bebasneue.className} text-amber-500 font-bold mb-3`}
               >
                 Nossos melhores pacotes!
               </h2>
               <h1
-                className={`${bebasneue.className} text-[#0082ca] border- text-6xl font-bold pb-10`}
+                className={`${bebasneue.className} text-[#0082ca] text-3xl font-bold`}
               >
                 {index === 0 && '3 praias em 1 dia'}
                 {index === 1 && 'Jericoacoara em 1 dia'}
                 {index === 2 && 'City tour'}
               </h1>
-              <p className="text-justify">
+              <p className="text-center lg:text-justify p-5 lg:p-0 lg:w-[70%]">
                 Conheça as belezas de Morro Branco, Praia das Fontes e Canoa
                 Quebrada em um único dia, onde você e sua família podem se
                 deslumbrar das paisagens mais lindas que o nosso Ceará tem a
                 oferecer.
               </p>
-              <a
-                className="cursor-pointer hover:bg-green-600 flex gap-2 bg-green-500 rounded-2xl p-2 px-6 items-center justify-center w-fit my-10"
-              >
+              <a className="mx-auto px-10 py-1 gap-1  cursor-pointer text-gray-100 hover:bg-green-600 flex bg-green-500 rounded-lg  items-center justify-center w-fit">
                 <FaWhatsapp className="" />
                 Reserve Já
               </a>
@@ -72,9 +70,9 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
             <Image
               src={src}
               alt={`slide-${index}`}
-              width={300}
-              height={500}
-              className=""
+              width={400}
+              height={200}
+              className="w-[80%] my-7"
             />
           </div>
         ))}

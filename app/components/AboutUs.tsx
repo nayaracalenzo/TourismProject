@@ -2,23 +2,23 @@ import React from 'react';
 import 'animate.css';
 import Image from 'next/image';
 import buggy from '../../public/buggy.jpeg'
-import { bebasneue } from '../fonts';
+import { poppins } from '../fonts';
 
 const AboutUs = () => {
   return (
-    <section className="flex bg-blue-50 px-60 text-gray-500 justify-between pt-30 flex-wrap-reverse overflow-hidden">
+    <section className="flex flex-col lg:flex-row bg-blue-50 md:px-60 lg:px-20 text-gray-500 lg:gap-20 justify-center overflow-hidden lg:items-center pb-10">
       <Image
         src={buggy}
         alt="..."
-        className="animate__animated animate__fadeInLeft animate__slower w-90 mb-30 rounded-3xl "
+        className="animate__animated animate__fadeInLeft animate__slower lg:w-[40%] w-full"
       />
-      <div className="animate__animated animate__fadeInRight animate__slower  w-[50%] ">
+      <div className="animate__animated animate__fadeInRight animate__slower w-full lg:w-[40%] px-5">
         <h1
-          className={`${bebasneue.className} text-6xl font-bold my-7 text-center text-[#0082ca]`}
+          className={`${poppins.className} text-[24px] mb-5 mt-10  font-semibold text-justify text-[#0082ca]`}
         >
-          SOBRE NÓS
+          Explore o mundo com a LisTur
         </h1>
-        <p className="text-justify pb-14 text-base/7">
+        <p className="text-justify pb-3 text-base/7 ">
           Bem-vindo à nossa agência de turismo, onde a beleza das praias de
           Fortaleza e região ganha vida! Somos uma equipe apaixonada por
           compartilhar o que há de melhor no litoral cearense, oferecendo
@@ -29,15 +29,16 @@ const AboutUs = () => {
           . Nosso objetivo é proporcionar um{' '}
           <strong>atendimento personalizado</strong>, guiando você por{' '}
           <strong>lugares paradisíacos</strong>, com toda a infraestrutura e{' '}
-          <strong>conforto</strong> que você merece. Com anos de experiência no
-          ramo de turismo, trabalhamos com dedicação para que sua viagem seja
-          perfeita, com{' '}
+          <strong>conforto</strong> que você merece. Trabalhamos com dedicação
+          para que sua viagem seja perfeita, com{' '}
           <strong>
             roteiros sob medida, serviços de qualidade e suporte constante
           </strong>
-          . Fortaleza, com suas praias de águas cristalinas, dunas exuberantes e
-          cultura vibrante, é o cenário ideal para quem busca{' '}
-          <strong>diversão, relaxamento e novas descobertas</strong>.
+          .
+          <p className="italic text-[#0082ca] pt-5 text-start">
+            É o cenário ideal para quem busca diversão, relaxamento e novas
+            descobertas.
+          </p>
         </p>
       </div>
     </section>

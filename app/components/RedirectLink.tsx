@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 const RedirectLink = ({icon='true'}) => {
   return (
     <a
-      href="https://wa.me/5585996823822"
+      href="https://wa.me/5585981781918"
       rel="noopener noreferrer"
       className={`fixed bottom-4 right-4 text-white p-3 ${icon ? 'shadow-lg rounded-full bg-green-500 hover:bg-green-600 transition-all' : 'bg-white opacity-80' }`}
 
