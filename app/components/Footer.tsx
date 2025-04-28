@@ -7,16 +7,19 @@ import cadastur from '../assets/cadastur.png';
 
 const Footer = () => {
   return (
-    <footer className="px-3 bg-gray-900 text-white py-25">
-      <div className="flex flex-col items-center justify-center gap-20">
-        <div className="flex flex-col gap-5 justify-center items-center">
+    <footer className="px-3 bg-gray-900 text-white py-25 lg:py-10" id='contato'>
+      <div className="flex flex-col items-center justify-center gap-20 lg:gap-100 lg:flex-row">
+        <div className="flex lg:flex-row lg:w-[40%] flex-col gap-5 justify-center items-center">
           <Image src={logo} alt="logo" className="w-30" />
-          <p className="text-center">
-            Serviço de táxi e turismo em Fortaleza-Ce.
-            Transfer, Viagens, Passeios, Aeroportos, Agendamentos.
-          </p>
-          <p>(85) 98178-1918</p>
+          <div className="flex flex-col items-center lg:items-start gap-5">
+            <p className="text-center lg:text-start">
+              Serviço de táxi e turismo em Fortaleza-Ce. Transfer, Viagens,
+              Passeios, Aeroportos, Agendamentos.
+            </p>
+            <p>(85) 98178-1918</p>
+          </div>
         </div>
+
         <div className="block text-center">
           <p className="text-sm">EMPRESA CADASTRADA</p>
           <Image

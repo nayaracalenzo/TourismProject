@@ -12,7 +12,7 @@ interface HeaderProps {
 const Header = ({ bgImage }: HeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="relative w-full pb-50 text-white">
+    <header className="relative w-full pb-50 text-white px-1">
       <div className="absolute inset-0 fixed z-[-1]">
         <Image
           src={bgImage}
@@ -23,7 +23,7 @@ const Header = ({ bgImage }: HeaderProps) => {
         />
         <div className="absolute inset-0 bg-black/50"></div>{' '}
       </div>
-      <div className="relative z-10 flex justify-between items-center">
+      <div className="relative z-10 flex justify-between items-center lg:px-20 lg:py-5">
         <Image className="h-40 w-auto contrast-200" src={logo} alt="logo" />
         <div className="relative">
           <button
@@ -36,25 +36,25 @@ const Header = ({ bgImage }: HeaderProps) => {
             <ul
               className={`${
                 isOpen ? 'block' : 'hidden'
-              } absolute -top-15 right-20 text-center lg:text-white lg:bg-transparent text-white lg:flex gap-10 justify-end font-medium h-full w-30`}
+              } absolute -top-15 lg:static lg:w-full right-20 text-center lg:text-white lg:bg-transparent text-white lg:flex gap-10 justify-end font-medium h-full w-30`}
             >
               <li className="duration-100 border-b-3 border-b-amber-300">
-                INÍCIO
+                <a href="#">INÍCIO</a>
               </li>
               <li className="cursor-pointer duration-100 hover:border-b-3 border-b-amber-300">
-                SOBRE NÓS
+                <a href="#sobre-nos">SOBRE NÓS</a>
               </li>
               <li className="cursor-pointer duration-100 hover:border-b-3 border-b-amber-300">
-                PASSEIOS
+                <a href="#passeios">PASSEIOS</a>
               </li>
               <li className="cursor-pointer duration-100 hover:border-b-3 border-b-amber-300">
-                CONTATO
+                <a href="#contato">CONTATO</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <h1 className="relative z-10 text-white font-bold text-center text-3xl py-[140px] mt-10">
+      <h1 className="relative z-10 text-white font-bold text-center text-3xl py-[140px] mt-10 sm:px-10">
         Seu Próximo <span className="text-yellow-300">Destino dos Sonhos</span>,
         Começa Aqui.
       </h1>

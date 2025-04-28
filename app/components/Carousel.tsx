@@ -41,28 +41,28 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
         {images.map((src, index) => (
           <div
             key={index}
-            className="p-3  flex flex-col-reverse lg:flex-row items-center justify-center min-w-full bg-gray-200 relative overflow-hidden "
+            className="p-3  flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-start min-w-full bg-gray-200 relative overflow-hidden"
           >
-            <div className="text-black z-1 w-full text-center py-25">
+            <div className="text-black z-1 w-full text-center py-25 lg:text-start lg:pl-10">
               <h2
-                className={`${bebasneue.className} text-amber-500 font-bold mb-3`}
+                className={`${bebasneue.className} text-amber-500 font-bold mb-3 lg:mb-4`}
               >
                 Nossos melhores pacotes!
               </h2>
               <h1
-                className={`${bebasneue.className} text-[#0082ca] text-3xl font-bold`}
+                className={`${bebasneue.className} text-[#0082ca] text-3xl lg:text-5xl font-bold`}
               >
                 {index === 0 && '3 praias em 1 dia'}
                 {index === 1 && 'Jericoacoara em 1 dia'}
                 {index === 2 && 'City tour'}
               </h1>
-              <p className="text-center lg:text-justify p-5 lg:p-0 lg:w-[70%]">
+              <p className="text-center lg:text-justify p-5 lg:py-5 lg:p-0 lg:w-[70%]">
                 Conheça as belezas de Morro Branco, Praia das Fontes e Canoa
                 Quebrada em um único dia, onde você e sua família podem se
                 deslumbrar das paisagens mais lindas que o nosso Ceará tem a
                 oferecer.
               </p>
-              <a className="mx-auto px-10 py-1 gap-1  cursor-pointer text-gray-100 hover:bg-green-600 flex bg-green-500 rounded-lg  items-center justify-center w-fit">
+              <a className="mx-auto px-10 py-1 gap-1  cursor-pointer text-gray-100 hover:bg-green-600 flex bg-green-500 rounded-lg  items-center justify-center w-fit lg:mx-0 lg:mt-5">
                 <FaWhatsapp className="" />
                 Reserve Já
               </a>
