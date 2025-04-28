@@ -1,7 +1,6 @@
-import "./globals.css";
+'use client';
+import './globals.css';
 import { poppins } from './fonts';
-
-
 
 export default function RootLayout({
   children,
@@ -10,9 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={poppins.className}>
-        {children}
-      </body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
