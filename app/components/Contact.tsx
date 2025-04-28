@@ -11,7 +11,7 @@ const Contact = () => {
       </p>
       <a
         href="https://wa.me/5585981781918?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20passeio"
-        className="animate__animated animate__fadeInLeft animate__slower mx-auto px-10 py-1 gap-1 cursor-pointer text-gray-100 hover:bg-green-600 flex bg-green-500 rounded-lg  items-center justify-center w-fit lg:mx-0 lg:mt-5 font-bold"
+        className="animate__animated animate__fadeInLeft animate__slower mx-auto px-10 py-1 gap-1 cursor-pointer text-gray-100 hover:bg-green-600 flex bg-green-500 rounded-lg  items-center justify-center w-fit lg:mx-0 lg:mt-5 font-bold my-10"
       >
         <FaWhatsapp className="" />
         Fale com nossa equipe!
