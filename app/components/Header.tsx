@@ -55,7 +55,7 @@ const Header = ({ bgImage }: HeaderProps) => {
         </div>
       </div>
       <h1 className="animate-slideUp relative z-10 text-white font-bold text-center text-3xl py-[140px] mt-10 sm:px-10">
-        Seu Próximo <span className="text-[#0082ca]">Destino dos Sonhos</span>,
+        Seu Próximo <span className="text-yellow-300">Destino dos Sonhos</span>,
         Começa Aqui.
       </h1>
     </header>
