@@ -8,7 +8,7 @@ import imgmundau from '../../public/imgmundau.jpg';
 import imgflecheiras from '../../public/imgflecheiras.jpg';
 import imgjeri from '../../public/imgjeri.jpg';
 import imgbeachpark from '../../public/imgbeachpark.jpg';
-import imgpraiadasfontes from '../../public/imgpraiadasfontes.jpg';
+import imgicaraideamontada from '../../public/imgicaraideamontada.jpg';
 import imgaguasbelas from '../../public/imgaguasbelas.jpg';
 import imgbarranova from '../../public/imgbarranova.jpg';
 import imgmorrobranco from '../../public/imgmorrobranco3.jpg';
@@ -28,9 +28,9 @@ const Tour = () => {
       desc: 'Canoa Quebrada',
     },
     {
-      local: 'Praia das Fontes',
-      img: imgpraiadasfontes,
-      desc: 'Praia das Fontes',
+      local: 'Icaraizinho de Amontada',
+      img: imgicaraideamontada,
+      desc: 'Icaraizinho de Amontada',
     },
     {
       local: 'Águas belas',
