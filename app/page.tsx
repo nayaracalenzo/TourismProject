@@ -3,7 +3,7 @@ import Tour from './components/Tour';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import imgfuturo from './assets/imgpraiafuturo.jpg'
+import imgfuturo from '../public/imgpraiafuturo.jpg'
 import Carousel from './components/Carousel';
 
 

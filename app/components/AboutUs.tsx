@@ -6,11 +6,11 @@ import { poppins } from '../fonts';
 
 const AboutUs = () => {
   return (
-    <section className="flex flex-col lg:flex-row bg-blue-50 sm:px-20 md:px-40 lg:px-20 text-gray-500 xl:gap-30 lg:gap-10 justify-center overflow-hidden lg:items-center pb-20">
+    <section className="flex flex-col lg:flex-row bg-blue-100 sm:px-20 md:px-40 lg:px-20 text-gray-500 xl:gap-30 lg:gap-10 justify-center overflow-hidden lg:items-center pb-20">
       <Image
         src={buggy}
         alt="..."
-        className="animate__animated animate__fadeInLeft animate__slower lg:w-[40%] w-full"
+        className="lg:mt-[50px] animate__animated animate__fadeInLeft animate__slower lg:w-[40%] w-full"
       />
       <div
         className="animate__animated animate__fadeInRight animate__slower w-full lg:w-[40%] px-5 xl:px-10"

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { FaInstagram, FaEnvelope } from 'react-icons/fa';
 import RedirectLink from '../components/RedirectLink';
 import logo from '../../public/listurlogo1.png';
-import cadastur from '../assets/cadastur.png';
+import cadastur from '../../public/cadastur.png';
 
 const Footer = () => {
   return (
