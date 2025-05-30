@@ -1,4 +1,3 @@
-'use client';
 import './globals.css';
 import GoogleAnalytics from './components/GoogleAnalytics';
 import { poppins } from './fonts';
